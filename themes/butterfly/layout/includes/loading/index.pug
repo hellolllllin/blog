@@ -1,0 +1,12 @@
+//- if theme.preloader.source === 1
+//-   include ./fullpage-loading.pug
+//- else
+//-   include ./pace.pug
+if theme.preloader.enable
+  case theme.preloader.source
+    when 1
+      include ./fullpage-loading.pug
+    when 2
+      include ./pace.pug
+    when 3
+      include ./spincat.pug

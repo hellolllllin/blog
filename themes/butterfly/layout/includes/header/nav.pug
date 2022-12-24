@@ -1,0 +1,98 @@
+//- nav#nav
+//-   span#blog_name
+//-     a#site-name(href=url_for('/')) #[=config.title]
+    
+//-   #menus
+//-     //- if (theme.algolia_search.enable || theme.local_search.enable)
+//-     //-   #search-button
+//-     //-     a.site-page.social-icon.search
+//-     //-       i.fas.fa-search.fa-fw
+//-     //-       span=' '+_p('search.title')
+//-     !=partial('includes/header/menu_item', {}, {cache: true})
+//-     center(id="name-container")
+//-       a(id="page-name" href="javascript:scrollToTop()") PAGE_NAME
+
+//-       #nav-right 
+//-         if (theme.algolia_search.enable || theme.local_search.enable)
+//-           #search-button
+//-             a.site-page.social-icon.search
+//-               i.fas.fa-search.fa-fw
+//-         #toggle-menu
+//-           a.site-page
+//-             i.fas.fa-bars.fa-fw
+
+//- nav#nav
+//-   span#blog_name
+//-     a#site-name(href=url_for('/')) #[=config.title]
+    
+//-   #menus
+//-     !=partial('includes/header/menu_item', {}, {cache: true})
+//-     center(id="name-container")
+//-       a(id="page-name" href="javascript:scrollToTop()") PAGE_NAME
+//-   #nav-right
+//-     if (theme.algolia_search.enable || theme.local_search.enable)
+//-       #search-button
+//-         a.site-page.social-icon.search
+//-           i.fas.fa-search.fa-fw
+//-       #toggle-menu
+//-         a.site-page
+//-           i.fas.fa-bars.fa-fw
+
+- const { darkmode } = theme
+nav#nav
+  span#blog_name
+    .back-home-button(tabindex='-1')
+      i.back-home-button-icon.fas.fa-grip-vertical
+      .back-menu-list-groups
+        .back-menu-list-group
+          .back-menu-list-title 我的
+          .back-menu-list
+            a.back-menu-item(href='/', title='博客', target='_blank', one-link-mark='yes')
+              i.fas.fa-blog
+              //- img.back-menu-item-icon(src='https://img02.anzhiy.cn/adminuploads/1/2022/09/05/6315ec9737ac4.png')
+              span.back-menu-item-text 我的博客
+            //- a.back-menu-item(href='https://file.hellolin.cf/', title='文件', target='_blank', one-link-mark='yes')
+            //-   //- img.back-menu-item-icon(src='https://img02.anzhiy.cn/adminuploads/1/2022/09/15/63232b7d91d22.jpg')
+            //-   span.back-menu-item-text 我的文件
+            a.back-menu-item(href='https://me.hellolin.cf/', title='主页', target='_blank', one-link-mark='yes')
+              i.fas.fa-user
+              //-   img.back-menu-item-icon(src='https://img02.anzhiy.cn/adminuploads/1/2022/04/27/6268e7d9de532.png')
+              span.back-menu-item-text 我的主页
+        //- .back-menu-list-group
+        //-   .back-menu-list-title 项目
+        //-   .back-menu-list
+        //-     a.back-menu-item(href='http://blgou.net/#/main/home', title='查看德信官网', target='_blank', rel='noopener nofollow', one-link-mark='yes')
+        //-       img.back-menu-item-icon(src='https://img02.anzhiy.cn/adminuploads/1/2022/09/15/6322cd942dbd9.png')
+        //-       span.back-menu-item-text 德信官网
+
+    a#site-name(href=url_for('/'))
+      .title #[=config.title]
+      i.fa-solid.fa-house
+
+  div.mask-name-container
+    center(id="name-container")
+      a(id="page-name" href="javascript:rmf.scrollToTop()") PAGE_NAME
+
+  #menus
+    if (theme.algolia_search.enable || theme.local_search.enable)
+      div.nav-button#search-button
+        a.site-page.social-icon.search
+          i.fas.fa-search.fa-fw
+          span=' '+_p('search.title')
+
+    if darkmode.enable && darkmode.button
+      div.nav-button#darkmode_navswitch
+        a.darkmode_switchbutton(type="button" title=_p('rightside.night_mode_title') onclick="rmf.switchDarkMode()")
+          i.fas.fa-adjust
+
+    div.nav-button#nav-totop
+      a.totopbtn
+        i.fas.fa-arrow-up
+        span#percent(onclick="btf.scrollToDest(0,500)") 0
+
+
+    !=partial('includes/header/menu_item', {}, {cache: true})
+
+    #toggle-menu
+      a.site-page
+        i.fas.fa-bars.fa-fw

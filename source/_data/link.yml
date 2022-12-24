@@ -1,0 +1,19 @@
+- class_name: dalaos
+  class_desc: sto %%% orz
+  link_list:
+    - name: 
+      link: 
+      avatar: 
+      descr: 
+
+- class_name: friends
+  class_desc: 朋友们
+  link_list:
+    - name: YKQ
+      link: https://www.cnblogs.com/9-1-11-9-15-9/
+      avatar: https://img1.imgtp.com/2022/12/24/9jbmZNSc.png
+      descr: OI 萌新妹纸
+    - name: FreedomKing
+      link: https://www.cnblogs.com/zhugeminhao/
+      avatar: https://img1.imgtp.com/2022/12/24/yS1x9JOv.png
+      descr: 蒟蒻

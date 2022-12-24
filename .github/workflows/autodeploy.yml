@@ -50,8 +50,8 @@ jobs:
       run: |
         cd ./public
         git init
-        git config --global user.name '${{ secrets.GITHUBUSERNAME }}'
-        git config --global user.email '${{ secrets.GITHUBEMAIL }}'
+        git config --global user.name 'hellolllllin'
+        git config --global user.email '1721364864@qq.com'
         git add .
         git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
-        git push --force --quiet "https://${{ secrets.GITHUBUSERNAME }}:${{ secrets.GITHUBTOKEN }}@github.com/${{ secrets.GITHUBUSERNAME }}/blog-public.git" main:main
+        git push --force --quiet "https://hellolllllin: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@github.com/hellolllllin/blog-public.git" main:main

@@ -351,6 +351,7 @@ waline:
       'https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_heart_eyes.png',
       'https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili/bb_thumbsup.png',
     ]
+    login: 'force'
 
 # utterances
 # https://utteranc.es/

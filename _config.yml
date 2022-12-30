@@ -136,7 +136,7 @@ baidusitemap:
 
 # hexo-offline-popup.
 service_worker:
-  maximumFileSizeToCacheInBytes: 3145728 # 缓存的最大文件大小，以字节为单位，此处设置为3MB。
+  maximumFileSizeToCacheInBytes: 6815744 # 缓存的最大文件大小，以字节为单位，此处设置为3MB。
   staticFileGlobs:
     - public/**/*.{js,html,xml,css,png,jpg,gif,svg,webp,eot,ttf,woff,woff2}
     # - public/**/*.{html,xml} #精简版使用这行即可
@@ -144,7 +144,7 @@ service_worker:
   # 注意，此处的文件类型就是会缓存下来的所有文件类型，如果不需要缓存那么多，
   # 而只是想判断网页更新与否，缓存html和xml即可。
   stripPrefix: public
-  verbose: false
+  verbose: true
   runtimeCaching:
     # CDNs - should be cacheFirst, since they should be used specific versions so should not change
     - urlPattern: /* # 如果你需要加载CDN資源，请配置该选项，如果沒有，可以不配置。

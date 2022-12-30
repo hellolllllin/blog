@@ -77,11 +77,11 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://img1.imgtp.com/2022/12/22/L9oWFbqg.jpg
+favicon: https://s2.loli.net/2022/12/29/ys9qgpAB3nP2lf8.jpg
 
 # Avatar (頭像)
 avatar:
-  img: https://img1.imgtp.com/2022/12/20/o5KGMXfo.jpg
+  img: https://s2.loli.net/2022/12/29/phA3q7XG2JnoFkT.jpg
   effect: false
 
 # Disable all banner image
@@ -139,10 +139,10 @@ error_404:
 
 post_meta:
   page: # Home Page
-    date_type: updated # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
-    date_format: relative # date/relative 顯示日期還是相對日期
+    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 主頁是否顯示分類
-    tags: false # true or false 主頁是否顯示標籤
+    tags: true # true or false 主頁是否顯示標籤
     label: true # true or false 顯示描述性文字
   post:
     date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
@@ -524,7 +524,7 @@ theme_color:
   button_hover: "#42A5F5"
   text_selection: "#78909C"
   link_color: "#1976D2"
-  meta_color: "#3F51B5"
+  meta_color: "var(--lin-main)"
   hr_color: "#A4D8FA"
   code_foreground: "#F47466"
   code_background: "rgba(27, 31, 35, .05)"
@@ -551,7 +551,7 @@ tag_ui: index # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://img1.imgtp.com/2022/12/21/muEPyjRx.jpg) # url(https://img1.imgtp.com/2022/12/21/IqC0ra2W.jpg)
+background: url(https://s2.loli.net/2022/12/29/tlBhEnPH8MOAfST.jpg) # url(https://img1.imgtp.com/2022/12/21/IqC0ra2W.jpg)
 
 # Footer Background
 footer_bg: false
@@ -636,14 +636,14 @@ beautify:
 font:
   global-font-size: # 1rem
   code-font-size: 16px
-  font-family: JiYingHuiPianYuan, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
   code-font-family: FiraCode
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
   font_link: 
-  font-family: FZZhunYuan
+  font-family: 
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
@@ -940,7 +940,7 @@ inject:
     - <link rel="stylesheet" href="/custom/tags.css" media="defer" onload="this.media='all'" />
     - <link rel="stylesheet" href="/custom/archive.css" media="defer" onload="this.media='all'" />
     # - <link rel="stylesheet" href="/custom/weather.css" media="defer" onload="this.media='all'" />
-    - <link rel="stylesheet" href="/custom/cursor.css" media="defer" onload="this.media='all'" />
+    # - <link rel="stylesheet" href="/custom/cursor.css" media="defer" onload="this.media='all'" />
     - <link rel="stylesheet" href="/custom/barrage.css" media="defer" onload="this.media='all'" />
     - <style id="barragesColor"></style>
     - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3687736_4tduk6kpt8i.css" />
@@ -953,7 +953,7 @@ inject:
     - <script async src="/custom/dynamicTitle.js"></script>
     - <script async src="/custom/oldAlert.js"></script>
     - <script async src="/zhheo/random.js"></script>
-    - <script defer src="/custom/cursor.js"></script>
+    # - <script defer src="/custom/cursor.js"></script>
     - <script defer src="/custom/nav.js"></script>
     - <script defer src="/custom/rightMenu.js"></script>
     - <script async src="/custom/universe.js"></script>

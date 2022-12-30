@@ -7,7 +7,6 @@ tags:
 categories:
 keywords:
 description:
-swiper_index:
 cover:
 top_img: false
 comments:

@@ -904,12 +904,12 @@ lazyload:
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
 pwa:
-  enable: false
-  manifest: /pwa/manifest.json
-  apple_touch_icon: /pwa/apple-touch-icon.png
-  favicon_32_32: /pwa/32.png
-  favicon_16_16: /pwa/16.png
-  mask_icon: /pwa/safari-pinned-tab.svg
+  enable: true
+  manifest: /manifest.json
+  apple_touch_icon: /favicons/apple-touch-icon.png
+  favicon_32_32: /favicons/favicon-32x32.png
+  favicon_16_16: /favicons/favicon-16x16.png
+  mask_icon: /favicons/safari-pinned-tab.svg
 
 # Open graph meta tags
 # https://developers.facebook.com/docs/sharing/webmasters/
@@ -1002,7 +1002,7 @@ wowjs:
 # hexo-butterfly-categories-card
 # see https://akilar.top/posts/a9131002/
 categoryBar:
-  enable: true
+  enable: false
   priority: 5
   enable_page: /
   layout:
@@ -1013,9 +1013,9 @@ categoryBar:
   row: 2
   message:
     - descr: 学习笔记
-      cover: 
+      cover: "linear-gradient(to bottom right, #546E7A, #9E9E9E)"
     - descr: 其他内容
-      cover:
+      cover: "linear-gradient(to bottom right, #1976D2, #00796B)"
     - descr: demo3
       cover:
     - descr: demo4
@@ -1069,7 +1069,7 @@ swiper:
     type: id
     name: recent-posts
     index: 0
-  default_descr: 再怎么看我也不知道怎么描述它的啦！
+  default_descr: 这个人太懒了，还没有写简介。。。
   swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css # swiper css依赖
   swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js # swiper js依赖
   custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁

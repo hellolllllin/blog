@@ -1177,9 +1177,7 @@ display: none;
     }
     
 } */
-#recent-posts > .recent-post-item > .recent-post-info > .article-meta-wrap {
-    color: var(--lin-main) !important;
-}
+
 /* 星空 */
 #universe { 
     display: block;
@@ -1405,7 +1403,7 @@ fill: #18171d;
 
 
 /* home top */
-#home_top {
+/* #home_top {
     max-width: 1500px;
     width: 100%;
     margin-top: .5rem;
@@ -1525,8 +1523,8 @@ a.category_button i {
     top: 10%;
     transition: .3s;
     transform: rotate(-10deg);
-    /*width: 100px;
-    text-align: center;*/
+    width: 100px;
+    text-align: center;
 }
 a.category_button:hover i {
     opacity: .8;
@@ -1559,12 +1557,12 @@ a.category_button:after {
   .top_post_group .top_post_item{
     border-radius: 0;
   }
-}
-.top_post_group{
+} */
+/* .top_post_group{
     display: flex;
     position: relative;
-}
-.top_post_group .top_post_item {
+} */
+/* .top_post_group .top_post_item {
     display: flex;
     width: 200px;
     min-width: 200px;
@@ -1616,7 +1614,7 @@ a.category_button:after {
 }
 .top_post_group .top_post_item:hover .post_info,
 .top_post_group .top_post_item:focus .post_info{
-    /*background: var(--mj-theme);*/
+    background: var(--mj-theme);
     box-shadow: inset 0 -60px 0 0 var(--lin-theme);
 }
 .top_post_group .top_post_item .post_info a{
@@ -1644,4 +1642,4 @@ a.category_button:after {
     font-weight: 600;
     font-size: .8rem!important;
     padding: 0!important;
-}
+} */

@@ -34,6 +34,7 @@ copyright_author_href:
 copyright_url:
 copyright_info:
 aside:
+swiper_index:
 ---
 
 挺久之前的笔记~~（还不如叫模板）~~了

@@ -1,32 +1,32 @@
-if is_current('/')
-  #home_top
-    .home_top_group
-      #homeTopGroup.homeTopGroup
-        #banner_group
-          #banners
-            include sticky.pug
-          .category_group
-            .category_item
-              a.category_button(href="/categories/学习笔记/",style="background:linear-gradient(to right,#364f6b,#3fc1c9)")
-                span.category_button_text 学习笔记
-                i.fas.fa-laptop-code
-            .category_item
-              a.category_button(href="/categories/个人日记/",style="background:linear-gradient(to right,#6639a6,#3490de)")
-                span.category_button_text 个人日记
-                i.fas.fa-lightbulb
-            .category_item
-              a.category_button(href="/categories/其他内容/",style="background:linear-gradient(to right,#f65,#ffbf37)")
-                span.category_button_text 其他内容
-                i.fas.fa-book
-        .top_post_group
-          if site.data.slider
-            each i in site.data.slider
-              .top_post_item
-                .post_cover
-                  a(href=url_for(i.link) title=i.title)
-                    img.post_bg.entered.loaded(src=url_for(i.cover))
-                    .post_cover_info
-                      p.post_cover_text= i.description
+//- if is_current('/')
+//-   #home_top
+//-     .home_top_group
+//-       #homeTopGroup.homeTopGroup
+//-         #banner_group
+//-           #banners
+//-             include sticky.pug
+//-           .category_group
+//-             .category_item
+//-               a.category_button(href="/categories/学习笔记/",style="background:linear-gradient(to right,#364f6b,#3fc1c9)")
+//-                 span.category_button_text 学习笔记
+//-                 i.fas.fa-laptop-code
+//-             .category_item
+//-               a.category_button(href="/categories/个人日记/",style="background:linear-gradient(to right,#6639a6,#3490de)")
+//-                 span.category_button_text 个人日记
+//-                 i.fas.fa-lightbulb
+//-             .category_item
+//-               a.category_button(href="/categories/其他内容/",style="background:linear-gradient(to right,#f65,#ffbf37)")
+//-                 span.category_button_text 其他内容
+//-                 i.fas.fa-book
+//-           .top_post_group
+//-           //- if site.data.slider
+//-           //-   each i in site.data.slider
+//-           //-     .top_post_item
+//-           //-       .post_cover
+//-           //-         a(href=url_for(i.link) title=i.title)
+//-           //-           img.post_bg.entered.loaded(src=url_for(i.cover))
+//-           //-           .post_cover_info
+//-           //-             p.post_cover_text= i.description
 
-                .post_info(onclick=`"window.open(`+url_for(i.link)+`,"_self")"`)
-                  a.article-title(href=url_for(i.link) title=i.title)= i.title
+//-           //-       .post_info(onclick=`"window.open(`+url_for(i.link)+`,"_self")"`)
+//-           //-         a.article-title(href=url_for(i.link) title=i.title)= i.title

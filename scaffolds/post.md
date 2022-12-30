@@ -16,4 +16,5 @@ copyright_author_href:
 copyright_url:
 copyright_info:
 aside:
+swiper_index:
 ---

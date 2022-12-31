@@ -1745,6 +1745,6 @@ a.category_button:after {
 /* “荐” */
 span.top-group-text
 {
-    background: var(--lin-main);
-    color: var(--lin-white)
+    background: var(--lin-main) !important;
+    color: var(--lin-white) !important
 }

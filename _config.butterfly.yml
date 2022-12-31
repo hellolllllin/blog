@@ -8,8 +8,10 @@ menu:
     归档: /archives/ || fas fa-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
+    随机: javascript:toRandomPost(); || fas fa-shuffle
   工具||fas fa-tools:
     空调: /air/ || fas fa-fan
+    早报: https://news.hellolin.cf/ || fas fa-newspaper
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
@@ -725,7 +727,7 @@ aside:
           link: /atom.xml
   card_announcement:
     enable: true
-    content: 初次进入网站的字体缓存需要一段时间。第二次进入速度就会变快啦！
+    content: 若在使用过程中发现有问题，请按下 Ctrl(Command) + Shift + F5 强制刷新试试！
   card_recent_post:
     enable: false
     limit: 5 # if set 0 will show all
@@ -958,6 +960,7 @@ inject:
     - <script defer src="/custom/rightMenu.js"></script>
     - <script async src="/custom/universe.js"></script>
     - <script defer src="/custom/tagBarActive.js"></script>
+    - <script data-pjax src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script>
     - <script async src="/custom/barrage.js"></script>
     - <script async src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.10.0/js/md5.min.js"></script>
     - <script async src="https://cdn1.tianli0.top/npm/leancloud-storage@4.13.4/dist/av-min.js"></script>
@@ -970,14 +973,15 @@ wowjs:
   mobile: false 
   animateitem:
     - class: recent-post-item 
-      style: animate__zoomIn
-      duration: 1s 
-      delay: 60ms
+      style: animate__fadeInUp
+      duration: 0.8s 
+      delay: 50ms
       offset: 10
       iteration: 1 
     - class: card-widget
-      style: animate__zoomIn
-      delay: 60ms
+      style: animate__fadeInUp
+      duration: 0.8s
+      delay: 50ms
     # - class: flink-list-card
     #   style: wowpanels
     - class: flink-list-card
@@ -986,9 +990,9 @@ wowjs:
     - class: flink-list-card
       style: animate__animated
       duration: 3.5s
-    - class: article-sort-item
-      style: animate__slideInRight
-      duration: 1.5s
+    # - class: article-sort-item
+    #   style: animate__slideInRight
+    #   duration: 1.5s
     - class: site-card
       style: animate__flipInY
       duration: 1.5s
@@ -1060,20 +1064,55 @@ tag_plugins:
 
 # hexo-butterfly-swiper
 # see https://akilar.top/posts/8e1264d1/
+# swiper:
+#   enable: false # 开关
+#   priority: 5 #过滤器优先权
+#   enable_page: / # 应用页面
+#   timemode: updated # date/updated
+#   layout: # 挂载容器类型
+#     type: id
+#     name: recent-posts
+#     index: 0
+#   default_descr: 这个人太懒了，还没有写简介。。。
+#   swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css # swiper css依赖
+#   swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js # swiper js依赖
+#   custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
+#   custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
+
 swiper:
-  enable: false # 开关
+  enable: true # 开关
+  randomenable: true # 人潮汹涌开关
   priority: 5 #过滤器优先权
   enable_page: / # 应用页面
-  timemode: updated # date/updated
+  timemode: updated #date/updated
   layout: # 挂载容器类型
     type: id
-    name: recent-posts
+    name: home_top
     index: 0
-  default_descr: 这个人太懒了，还没有写简介。。。
-  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css # swiper css依赖
-  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js # swiper js依赖
-  custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
-  custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
+  category:
+    - name: 学习笔记
+      path: /categories/学习笔记/
+      shadow: var(--lin-shadow-blue)
+      class: blue
+      icon: fas fa-code-compare
+    - name: 个人日记
+      path: /categories/个人日记/
+      shadow: var(--lin-shadow-red)
+      class: red
+      icon: fas fa-calendar-days
+    - name: 其他内容
+      path: /categories/其他内容/
+      shadow: var(--lin-shadow-green)
+      class: green
+      icon: fas fa-book
+  default_descr: 再怎么看我也不知道怎么描述它的啦！
+  swiper_css: https://cdn.cbd.int/hexo-butterfly-swiper-anzhiyu-pro/lib/swiper.min.css #swiper css依赖
+  swiper_js: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/js/swiper.min.js #swiper js依赖 #swiper js依赖
+  custom_css: https://cdn.cbd.int/hexo-butterfly-swiper-anzhiyu-pro/lib/swiperstyle.css # 适配主题样式补丁
+  custom_js: https://cdn.cbd.int/hexo-butterfly-swiper-anzhiyu-pro/lib/swiper_init.js # swiper初始化方法
+  gsap_js: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js
+  people_js: https://npm.elemecdn.com/hexo-butterfly-swiper-anzhiyu-pro/lib/people.min.js
+  categorygroup_css: https://cdn.cbd.int/hexo-butterfly-swiper-anzhiyu-pro/lib/categoryGroup.css
 
 # footer_beautify
 # 页脚计时器：[Native JS Timer](https://akilar.top/posts/b941af/)
@@ -1143,6 +1182,8 @@ gitcalendar:
   # swiper_js: https://cdn.cbd.int/hexo-butterfly-swiper/lib/swiper.min.js
   # swiperbdage_init_js: https://cdn.cbd.int/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js
 
+flink_style: volantis # 
+
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
@@ -1169,7 +1210,7 @@ CDN:
     # main:
     # utils:
     # translate:
-    # local_search:
+    local_search: https://npm.elemecdn.com/anzhiyu-blog@2.1.2/js/search/local-search.js
     # algolia_js:
     # algolia_search_v4:
     # instantsearch_v4:

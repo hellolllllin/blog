@@ -21,7 +21,13 @@ if theme.menu
             each val,lab in value 
               - const valArray = val.split('||')
               li
-                a.site-page.child(href=url_for(trim(valArray[0])))
-                  if valArray[1]
-                    i.fa-fw(class=trim(valArray[1]))
-                  span=' '+ lab
+                if lab == '随机'
+                  a.site-page.child(href='javascript:toRandomPost();')
+                    if valArray[1]
+                      i.fa-fw(class=trim(valArray[1]))
+                    span=' '+ lab
+                else
+                  a.site-page.child(href=url_for(trim(valArray[0])))
+                    if valArray[1]
+                      i.fa-fw(class=trim(valArray[1]))
+                    span=' '+ lab

@@ -1,19 +1,27 @@
 - class_name: dalaos
   class_desc: sto %%% orz
   link_list:
-    - name: 
-      link: 
-      avatar: 
-      descr: 
+    - name: eggegg
+      link: https://www.luogu.com.cn/blog/676055/
+      avatar: https://s2.loli.net/2022/12/31/aD7msnTGo4CZKQe.png
+      descr: egg
+      siteshot: https://s2.loli.net/2022/12/31/369YcONWq784Brv.png
 
 - class_name: friends
   class_desc: 朋友们
   link_list:
     - name: YKQ
       link: https://www.cnblogs.com/9-1-11-9-15-9/
-      avatar: https://img1.imgtp.com/2022/12/24/9jbmZNSc.png
+      avatar: https://s2.loli.net/2022/12/31/h8LraOMjC4RzHql.png
       descr: OI 萌新妹纸
+      siteshot: https://s2.loli.net/2022/12/31/fFgqUb5ljcivtJX.png
     - name: FreedomKing
       link: https://www.cnblogs.com/zhugeminhao/
-      avatar: https://img1.imgtp.com/2022/12/24/yS1x9JOv.png
+      avatar: https://s2.loli.net/2022/12/31/QCsxIBSYcoEMgLm.png
       descr: 蒟蒻
+      siteshot: https://s2.loli.net/2022/12/31/qx7zA81iTnfaZyE.png
+    - name: liaiyang
+      link: https://www.luogu.com.cn/blog/liaiyang/
+      avatar: https://s2.loli.net/2022/12/31/5GDwLphj2HbZrYI.jpg
+      descr: 蒟蒻一个
+      siteshot: https://s2.loli.net/2022/12/31/lIWysFM8nNVxftC.png

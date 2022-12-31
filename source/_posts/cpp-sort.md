@@ -35,6 +35,7 @@ copyright_url:
 copyright_info:
 aside:
 swiper_index:
+top_group_index: 1
 ---
 
 挺久之前的笔记~~（还不如叫模板）~~了

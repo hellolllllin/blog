@@ -8,5 +8,5 @@ description:
 keywords:
 top_img: false
 mathjax:
-aside:
+aside: false
 ---

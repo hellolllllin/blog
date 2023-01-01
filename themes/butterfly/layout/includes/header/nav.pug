@@ -58,6 +58,15 @@ nav#nav
               i.fas.fa-user
               //-   img.back-menu-item-icon(src='https://img02.anzhiy.cn/adminuploads/1/2022/04/27/6268e7d9de532.png')
               span.back-menu-item-text 我的主页
+        .back-menu-list-group
+          .back-menu-list-title 线路
+          .back-menu-list
+            a.back-menu-item(href='https://www.hellolin.cf/', title='Vercel', one-link-mark='yes')
+              i.fa-solid.fa-thumbs-up
+              span.back-menu-item-text Vercel主线
+            a.back-menu-item(href='https://sub1.hellolin.cf/', title='Netlify', one-link-mark='yes')
+              i.fa-solid.fa-gears
+              span.back-menu-item-text Netlify副线
         //- .back-menu-list-group
         //-   .back-menu-list-title 项目
         //-   .back-menu-list
@@ -71,14 +80,14 @@ nav#nav
 
   div.mask-name-container
     center(id="name-container")
-      a(id="page-name" href="javascript:rmf.scrollToTop()") PAGE_NAME
+      //- a(id="page-name" href="javascript:rmf.scrollToTop()") PAGE_NAME
 
   #menus
     if (theme.algolia_search.enable || theme.local_search.enable)
       div.nav-button#search-button
         a.site-page.social-icon.search
           i.fas.fa-search.fa-fw
-          span=' '+_p('search.title')
+          //- span=' '+_p('search.title')
 
     if darkmode.enable && darkmode.button
       div.nav-button#darkmode_navswitch

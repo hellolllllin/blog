@@ -141,7 +141,8 @@ div#archive,
 div#page, 
 div#category,
 div#swiper_container,
-.top-group-list-item
+.top-group-list-item,
+.search-dialog
 {
 background-color: var(--lin-white-acrylic2) !important;
 /* background-image: url(data:image/png;base64,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); */
@@ -158,7 +159,8 @@ background-color: var(--lin-white-acrylic2) !important;
 [data-theme="dark"] div#page,
 [data-theme="dark"] div#category,
 [data-theme="dark"] div#swiper_container,
-[data-theme="dark"] .top-group-list-item
+[data-theme="dark"] .top-group-list-item,
+[data-theme="dark"] .search-dialog
 {
     background-color: var(--lin-black-acrylic2) !important;
     /* background-image: url(data:image/png;base64,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); */
@@ -184,7 +186,9 @@ div#category,
 .menus_item_child,
 div#swiper_container,
 /* .swiper-slide */
-.top-group-list-item
+.top-group-list-item,
+.search-dialog,
+.local-search__hit-item
 {
 border: var(--lin-style-border) !important;
 }
@@ -199,7 +203,8 @@ div#category:hover,
 .menus_item_child:hover,
 /* .swiper-slide:hover, */
 div#swiper_container:hover,
-.top-group-list-item:hover
+.top-group-list-item:hover,
+.search-dialog:hover
 {
 border: var(--lin-style-border-hover) !important;
 box-shadow: var(--lin-shadow-main) !important;
@@ -215,6 +220,11 @@ div#swiper_container
     border-radius: 8px !important
 }
 
+.local-search__hit-item
+{
+    margin: 10px 0 10px 0;
+    border-radius: 8px !important
+}
 
 /* 页脚透明 */
 #footer {
@@ -260,23 +270,21 @@ border-radius: 6px;
     min-width:300px;
 }
 }
-.recent-posts{
-    width:auto !important;
-}
-
-#recent-posts:first-child{
-    margin-top: -1rem !important;
-}
 
 #content-inner {
-    max-width: 1500px !important;
+    max-width: 3000px !important;
 }
 
 /* toc */
 
+.toc-item > .active
+{
+    border-radius: var(--lin-border-radius) !important
+}
+
 .toc-item
 {
-    border-radius: var(--lin-border-radius)
+    line-height: 2.2 !important
 }
 
 /* 滚动条 */
@@ -702,11 +710,11 @@ width: 100%;
 left: 50%;
 transform: translateX(-50%);
 }
-.nav-fixed.nav1-visible #name-container {
+.nav-fixed.nav-visible #name-container {
 transition: 0.3s;
 transform: translate(-50%, 60px);
 }
-.nav-fixed.nav1-visible #menus .menus_items {
+.nav-fixed.nav-visible #menus .menus_items {
 transform: translate(-50%);
 transition: 0.3s;
 line-height: 60px;
@@ -751,8 +759,10 @@ border-radius: var(--lin-border-radius);
 #nav .menus_items .menus_item > a > i:last-child {
 display: none;
 }
-#nav #search-button {
-font-size: 1.3em;
+#search-button,
+#darkmode_navswitch,
+#nav-totop {
+font-size: 1em !important;
 }
 
 @media screen and (min-width: 900px) {
@@ -892,7 +902,9 @@ border-radius: 35px;
 height: 30px;
 }
 
-#nav #search-button {
+#search-button,
+#darkmode_navswitch,
+#nav-totop {
 padding-left: 0;
 }
 #page-header #nav .nav-button {
@@ -902,14 +914,16 @@ padding: 0;
 #page-header:not(.is-top-bar) #nav-totop a {
 display: none;
 }
-#search-button a.site-page.social-icon.search span {
+/* #search-button a.site-page.social-icon.search span {
 display: none;
-}
+} */
 
 #page-header.nav-fixed #nav a:hover, #page-header.nav-fixed #nav #site-name:hover, #page-header.nav-fixed #nav #toggle-menu:hover
 {
     color: var(--lin-white) !important
 }
+
+
 
 /* #nav-right{
     flex:1 1 auto;
@@ -991,12 +1005,15 @@ display: none;
     position: relative;
     font-size: 24px; 
 } */
-
+#nav .menus_items .menus_item .menus_item_child
+{
+    background-color: var(--lin-white-acrylic2) !important;
+}
+[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child
+{
+    background-color: var(--lin-black-acrylic2) !important;
+}
 /* 导航栏 */
-/*
-2022.10.4更新：
-根据我发现的没有自适应，间距不合理问题进行调整，如果用了这个的朋友们建议改一改
-*/
 /* #page-name::before{
     font-size:18px;
     position: absolute;
@@ -1297,9 +1314,13 @@ display: none;
     top: 10%;
     left: 10%;
     background-color: var(--lin-white-acrylic2);
-    border: 2px solid var(--lin-main);
+    border: var(--lin-style-border);
     border-radius: 8px;
     z-index: 100;
+}
+#rightMenu
+{
+    border: var(--lin-style-border-hover)
 }
 [data-theme="dark"] #rightMenu {
     background-color: var(--lin-black-acrylic2);
@@ -1348,6 +1369,16 @@ display: none;
 }
 .rightMenu-group.hide{
     display: none;
+}
+.rightMenu-item:hover
+{
+    box-shadow: var(--lin-shadow-main);
+}
+
+.rightMenu-line > .rightMenu-item:hover
+{
+    padding: 8px 10px;
+    transform: scale(1.05);
 }
 
 /* 波浪css */
@@ -1670,9 +1701,11 @@ a.category_button:after {
 #home_top {
     margin: 1rem auto 0;
     padding: 0px 10px;
-    max-width: 1450px;
+    max-width: 2500px;
     width: 100%;
 }
+#recent-posts {width: 100% !important}
+#peoplecanvas {width: 100%; height: 100%; } 
 
 
 /* 进度条 */
@@ -1748,3 +1781,4 @@ span.top-group-text
     background: var(--lin-main) !important;
     color: var(--lin-white) !important
 }
+

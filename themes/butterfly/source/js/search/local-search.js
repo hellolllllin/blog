@@ -36,8 +36,8 @@ window.addEventListener('load', () => {
   }
 
   const searchClickFnOnce = () => {
-    document.querySelector('#local-search .search-close-button').addEventListener('click', closeSearch)
-    $searchMask.addEventListener('click', closeSearch)
+    // document.querySelector('#local-search .search-close-button').addEventListener('click', closeSearch)
+    // $searchMask.addEventListener('click', closeSearch)
     if (GLOBAL_CONFIG.localSearch.preload) dataObj = fetchData(GLOBAL_CONFIG.localSearch.path)
   }
 

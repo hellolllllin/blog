@@ -15,8 +15,11 @@ menu:
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
-  友链: /link/ || fas fa-link
-  关于: https://about.hellolin.cf/ || fas fa-heart
+  其他||fas fa-list-ul:
+    友链: /link/ || fas fa-link
+    日志: /logs/ || fas fa-file-lines
+    协议: /license/ || fas fa-id-card
+  关于: https://me.hellolin.cf/ || fas fa-heart
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -949,6 +952,7 @@ inject:
   bottom:
     # - <script src="xxxx"></script>
     - <canvas id="universe"></canvas>
+    - <script src="/custom/main.js"></script>
     - <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     - <script src="/custom/ie.js"></script>
     # - <script src="/custom/lunbo.js"></script>
@@ -975,13 +979,12 @@ wowjs:
     - class: recent-post-item 
       style: animate__fadeInUp
       duration: 0.8s 
-      delay: 50ms
-      offset: 10
+      delay: 10ms
       iteration: 1 
     - class: card-widget
       style: animate__fadeInUp
       duration: 0.8s
-      delay: 50ms
+      delay: 10ms
     # - class: flink-list-card
     #   style: wowpanels
     - class: flink-list-card

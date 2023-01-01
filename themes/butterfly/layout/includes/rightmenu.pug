@@ -62,13 +62,16 @@
         a.rightMenu-item(href="javascript:rmf.openWithNewTab()")
             i.fa.fa-window-restore
             span='在新窗口打开'
-        a.rightMenu-item(href="javascript:rmf.click()")
-            i.fa.fa-arrows-alt
-            span='全屏显示'
+        //- a.rightMenu-item(href="javascript:rmf.click()")
+        //-     i.fa.fa-arrows-alt
+        //-     span='全屏显示'
         a.rightMenu-item(href="javascript:rmf.copyLink()")
             i.fa.fa-copy
             span='复制图片链接'
     .rightMenu-group.rightMenu-line
+        a.rightMenu-item(href="javascript:refreshCache()")
+            i.fas.fa-retweet
+            span='刷新缓存'
         a.rightMenu-item(href="javascript:toRandomPost()")
             i.fa.fa-paper-plane
             span='随便逛逛'
@@ -82,7 +85,7 @@
             a.rightMenu-item(href="javascript:rmf.switchReadMode();")
                 i.fa.fa-book
                 span='阅读模式'
-        a.rightMenu-item(href="javascript:pjax.loadUrl(\"/license/\");")
+        a.rightMenu-item(href="/license/")
             i.fa.fa-info-circle
             span='版权声明'
         a.rightMenu-item(href="javascript:callTerm();")

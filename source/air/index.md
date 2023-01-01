@@ -7,7 +7,7 @@ comments:
 description:
 keywords:
 top_img: false
-aside:
+aside: false
 ---
 
 <iframe src="https://air.hellolin.cf/" width="100%" frameborder="0" scrolling="auto" height="800px"></iframe>

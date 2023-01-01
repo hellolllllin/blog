@@ -730,7 +730,7 @@ aside:
           link: /atom.xml
   card_announcement:
     enable: true
-    content: 若在使用过程中发现有问题，请按下 Ctrl(Command) + Shift + F5 强制刷新试试！
+    content: 若在使用过程中发现有问题，请按下 Ctrl(Command) + Shift + R 强制刷新试试！
   card_recent_post:
     enable: false
     limit: 5 # if set 0 will show all

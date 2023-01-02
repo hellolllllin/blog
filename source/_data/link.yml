@@ -1,3 +1,12 @@
+- class_name: myself
+  class_desc: 没人看的菜鸡
+  link_list:
+    - name: Hellolin の 小破窝
+      link: https://hellolin.cf/
+      avatar: https://s2.loli.net/2022/12/29/phA3q7XG2JnoFkT.jpg
+      descr: ">Say hello to the whole world!"
+      siteshot: https://s2.loli.net/2023/01/01/m3stJ89XIkxiQra.png
+
 - class_name: dalaos
   class_desc: sto %%% orz
   link_list:
@@ -21,7 +30,7 @@
       descr: 蒟蒻
       siteshot: https://s2.loli.net/2022/12/31/qx7zA81iTnfaZyE.png
     - name: liaiyang
-      link: https://www.luogu.com.cn/blog/liaiyang/
+      link: https://www.cnblogs.com/liaiyang
       avatar: https://s2.loli.net/2022/12/31/5GDwLphj2HbZrYI.jpg
       descr: 蒟蒻一个
-      siteshot: https://s2.loli.net/2022/12/31/lIWysFM8nNVxftC.png
+      siteshot: https://s2.loli.net/2023/01/01/MglVS1sp63TAf85.png

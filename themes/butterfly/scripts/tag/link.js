@@ -9,7 +9,7 @@ function link(args) {
     let imgUrl = "https://api.iowen.cn/favicon/" + urlNoProtocol + ".png";
 
     return `<a class="tag-Link" target="_blank" href="${link}">
-    <div class="tag-link-tips">引用站外地址</div>
+    <div class="tag-link-tips">链接跳转至站外，请注意隐私安全</div>
     <div class="tag-link-bottom">
         <div class="tag-link-left" style="background-image: url(${imgUrl});"></div>
         <div class="tag-link-right">

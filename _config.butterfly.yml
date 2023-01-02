@@ -639,8 +639,8 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size: # 1rem
-  code-font-size: 16px
+  global-font-size: 15px
+  code-font-size: 15px
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
   code-font-family: FiraCode
 
@@ -811,7 +811,7 @@ darkmode:
   # Switch dark/light mode automatically (自動切換 dark mode和 light mode)
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
-  # autoChangeMode: false
+  # autoChangeMode: 3  Disable
   autoChangeMode: 1
 
 # Don't modify the following settings unless you know how they work (非必要請不要修改 )
@@ -946,9 +946,12 @@ inject:
     - <link rel="stylesheet" href="/custom/archive.css" media="defer" onload="this.media='all'" />
     # - <link rel="stylesheet" href="/custom/weather.css" media="defer" onload="this.media='all'" />
     # - <link rel="stylesheet" href="/custom/cursor.css" media="defer" onload="this.media='all'" />
-    - <link rel="stylesheet" href="/custom/barrage.css" media="defer" onload="this.media='all'" />
+    # - <link rel="stylesheet" href="/custom/barrage.css" media="defer" onload="this.media='all'" />
     - <style id="barragesColor"></style>
     - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3687736_4tduk6kpt8i.css" />
+    - <style id="blurStyle"></style>
+    - <style id="mainColor"></style>
+    # - <link rel="stylesheet" href="https://npm.elemecdn.com/mdui@1.0.2/dist/css/mdui.min.css"/>
   bottom:
     # - <script src="xxxx"></script>
     - <canvas id="universe"></canvas>
@@ -965,7 +968,8 @@ inject:
     - <script async src="/custom/universe.js"></script>
     - <script defer src="/custom/tagBarActive.js"></script>
     - <script data-pjax src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script>
-    - <script async src="/custom/barrage.js"></script>
+    # - <script async src="/custom/barrage.js"></script>
+    # - <script src="https://npm.elemecdn.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
     - <script async src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.10.0/js/md5.min.js"></script>
     - <script async src="https://cdn1.tianli0.top/npm/leancloud-storage@4.13.4/dist/av-min.js"></script>
     

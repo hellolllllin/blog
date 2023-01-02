@@ -281,18 +281,14 @@ document.addEventListener('DOMContentLoaded', function () {
         const currentTop = window.scrollY || document.documentElement.scrollTop
         const isDown = scrollDirection(currentTop)
         if (currentTop > 56) {
-          $header.classList.add('is-top-bar', 'nav-visible')
           if (isDown) {
-            // if ($header.classList.contains('nav-visible')) $header.classList.add('nav-visible')
-            // if ($header.classList.contains('nav1-visible')) $header.classList.remove('nav1-visible')
-            // if (!$header.classList.contains('nav-visible')) $header.classList.add('nav-visible')
+            if ($header.classList.contains('nav-visible')) $header.classList.remove('nav-visible')
             if (isChatBtnShow && isChatShow === true) {
               chatBtnHide()
               isChatShow = false
             }
           } else {
             if (!$header.classList.contains('nav-visible')) $header.classList.add('nav-visible')
-            // if (!$header.classList.contains('nav1-visible')) $header.classList.add('nav1-visible')
             if (isChatBtnHide && isChatShow === false) {
               chatBtnShow()
               isChatShow = true
@@ -304,15 +300,17 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         } else {
           if (currentTop === 0) {
-            $header.classList.remove( 'nav-fixed', 'nav-visible')
-            $header.classList.remove('is-top-bar')
+            $header.classList.remove(/* 'nav-fixed', */'nav-visible')
           }
           $rightside.style.cssText = "opacity: ''; transform: ''"
         }
 
+        isShowPercent && rightsideScrollPercent(currentTop)
+
         if (document.body.scrollHeight <= innerHeight) {
           $rightside.style.cssText = 'opacity: 0.8; transform: translateX(-58px)'
         }
+
       }, 200)
     
     window.scrollCollect = scrollTask

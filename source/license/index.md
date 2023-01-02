@@ -64,7 +64,7 @@ aside: false
 
 ### 第二章 第四节 其他说明
 
-我不会主动向，除上面列出的第三方服务的，其他任何的个人或公司，出于任何目的，透露、转让或共享您的隐私数据。
+我不会主动向除上面列出的第三方服务的其他任何的个人或公司，出于任何目的，透露、转让或共享您的隐私数据。
 
 您有权利选择是否展示这些隐私信息，可以通过浏览器的设置来选择可以收集或不可以收集哪些信息。
 
@@ -72,21 +72,21 @@ aside: false
 
 [Wikipedia 上对于 Cookie 的说明](https://zh.wikipedia.org/wiki/Cookie)；
 
-Internet Explorer 浏览器：[Cookie 的说明](https://support.microsoft.com/en-us/help/260971/description-of-cookies)；
+Microsoft Internet Explorer 浏览器：[Cookie 的说明](https://support.microsoft.com/en-us/help/260971/description-of-cookies)；
 
-Chrome 浏览器：[在 Chrome 中清除、启用和管理 Cookie](https://support.google.com/chrome/answer/95647?hl=zh-Hans)；
+Google Chrome 浏览器：[在 Chrome 中清除、启用和管理 Cookie](https://support.google.com/chrome/answer/95647?hl=zh-Hans)；
 
-Edge 浏览器（新版）：[查看 Microsoft Edge 中的 Cookie](https://support.microsoft.com/zh-cn/topic/%E6%9F%A5%E7%9C%8B-microsoft-edge-%E4%B8%AD%E7%9A%84-cookie-a7d95376-f2cd-8e4a-25dc-1de753474879)；
+Microsoft Edge 浏览器（新版）：[查看 Microsoft Edge 中的 Cookie](https://support.microsoft.com/zh-cn/topic/%E6%9F%A5%E7%9C%8B-microsoft-edge-%E4%B8%AD%E7%9A%84-cookie-a7d95376-f2cd-8e4a-25dc-1de753474879)；
 
-Firefox 浏览器：[Cookie](https://support.mozilla.org/zh-CN/kb/Cookies)；
+Mozilla Firefox 浏览器：[Cookie](https://support.mozilla.org/zh-CN/kb/Cookies)；
 
-Android 浏览器：[查找和管理您的网络与应用活动记录](https://support.google.com/nexus/answer/54068?visit_id=638081398218633961-4253477808&hl=zh-Hans&rd=1)；
+Google Android 浏览器：[查找和管理您的网络与应用活动记录](https://support.google.com/nexus/answer/54068?visit_id=638081398218633961-4253477808&hl=zh-Hans&rd=1)；
+
+Apple Safari 浏览器：[在 iPhone、iPad 或 iPod touch 上清除 Safari 浏览器中的历史记录和 Cookie](https://support.apple.com/zh-cn/HT201265)；
+
+Apple Safari 浏览器：[在 Mac 上的 Safari 浏览器中清除 Cookie](https://support.apple.com/zh-cn/guide/safari/sfri11471/16.1/mac)；
 
 Opera 浏览器：[How to manage cookies in Opera](https://blogs.opera.com/news/2015/08/how-to-manage-cookies-in-opera/)；
-
-Safari 浏览器：[在 iPhone、iPad 或 iPod touch 上清除 Safari 浏览器中的历史记录和 Cookie](https://support.apple.com/zh-cn/HT201265)；
-
-Safari 浏览器：[在 Mac 上的 Safari 浏览器中清除 Cookie](https://support.apple.com/zh-cn/guide/safari/sfri11471/16.1/mac)；
 
 其他浏览器：请参照浏览器制造商给予的文档并查询相关内容。
 

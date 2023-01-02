@@ -78,7 +78,12 @@ hexo.extend.helper.register('inject_head_js', function () {
       const t = saveToLocal.get('theme')
     `
 
+    // if(localStorage.getItem("lin-autoChange")==null)
+    // {
+    //   localStorage.setItem("lin-autoChange", darkmode.autoChangeMode)
+    // }
     const autoChangeMode = darkmode.autoChangeMode
+    // const autoChangeMode = localStorage.getItem("lin-autoChange")
 
     if (autoChangeMode === 1) {
       darkmodeJs += `

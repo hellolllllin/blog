@@ -37,5 +37,17 @@ function clSearch()
   bodyStyle.overflow = ''
   btf.animateOut(document.querySelector('#local-search .search-dialog'), 'search_close .5s')
   btf.animateOut($searchMask, 'to_hide 0.5s')
-  console.log('1')
+}
+
+function fullScreen()
+{
+  if (document.fullscreenElement) document.exitFullscreen()
+  else document.documentElement.requestFullscreen();
+}
+
+function callTerm()
+{
+  const term=document.getElementById('settingWindow')
+  if(term.classList.contains('settingHide')) term.classList.remove('settingHide')
+  else term.classList.add('settingHide')
 }

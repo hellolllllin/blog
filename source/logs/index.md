@@ -12,6 +12,12 @@ aside: false
 
 {% timeline 更新日志,green %}
 
+<!-- timeline 2023.01.04 Wed. -->
+
+1. 更新了代码高亮主题，`Tokyo Night Dark`。
+
+<!-- endtimeline -->
+
 <!-- timeline 2023.01.02 Mon. -->
 
 1. `114514` 年大谜题导航栏被解决（？

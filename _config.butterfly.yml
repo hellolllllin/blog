@@ -949,6 +949,7 @@ inject:
     # - <link rel="stylesheet" href="/custom/barrage.css" media="defer" onload="this.media='all'" />
     - <style id="barragesColor"></style>
     - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3687736_4tduk6kpt8i.css" />
+    - <link rel="stylesheet" href="/custom/hljs-theme.css" />
     - <style id="blurStyle"></style>
     - <style id="mainColor"></style>
     # - <link rel="stylesheet" href="https://npm.elemecdn.com/mdui@1.0.2/dist/css/mdui.min.css"/>

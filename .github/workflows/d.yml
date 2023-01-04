@@ -54,6 +54,6 @@ jobs:
         git config --global user.email '1721364864@qq.com'
         git add .
         git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
-        git remote add origin https://hellolllllin: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@github.com/hellolllllin/blog-public.git
+        git remote add origin https://hellolllllin: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@github.com/hellolllllin/hellolllllin.github.io.git
         git checkout -b main
         git push --force --quiet -u origin main

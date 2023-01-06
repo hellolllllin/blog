@@ -937,6 +937,8 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+    - <meta name="theme-color" content="#0c9487" media="(prefers-color-scheme:light)">
+    - <meta name="theme-color" content="#00897b" media="(prefers-color-scheme:dark)">
     # - <link rel="stylesheet" href="/xxx.css">
     # - <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/hellolllllin/blog-sources/part.css">
     - <link rel="stylesheet" href="/custom/main.css" media="defer" onload="this.media='all'" />
@@ -984,12 +986,11 @@ wowjs:
     - class: recent-post-item 
       style: animate__fadeInUp
       duration: 0.8s 
-      delay: 10ms
-      iteration: 1 
+      # delay: 10ms
     - class: card-widget
       style: animate__fadeInUp
       duration: 0.8s
-      delay: 10ms
+      # delay: 10ms
     # - class: flink-list-card
     #   style: wowpanels
     - class: flink-list-card
@@ -1103,8 +1104,8 @@ swiper:
       shadow: var(--lin-shadow-blue)
       class: blue
       icon: fas fa-code-compare
-    - name: 个人日记
-      path: /categories/个人日记/
+    - name: 折腾日记
+      path: /categories/折腾日记/
       shadow: var(--lin-shadow-red)
       class: red
       icon: fas fa-calendar-days

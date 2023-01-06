@@ -15,76 +15,140 @@
       a(href='https://github.com/jerryc127/hexo-theme-butterfly')= 'Butterfly'
   if theme.footer.custom_text
     .footer_custom_text!=`${theme.footer.custom_text}`
+//- //- #footer_deal
+//- //-   a.deal_link(href="mailto:hellolinoi@outlook.com" title="mail")
+//- //-     i.iconfont.icon-mail
+//- //-   a.deal_link(href="http://wpa.qq.com/msgrd?v=3&uin=1721364864&site=qq&menu=yes" title="qq" target="_blank")
+//- //-     i.iconfont.icon-qq1
+//- //-   a.deal_link(href="https://github.com/hellolllllin" title="github"  target="_blank")
+//- //-     i.iconfont.icon-github1
+//- //-   img.footer_mini_logo.entered.loading(style="border-radius:50%" src='https://img1.imgtp.com/2022/12/22/L9oWFbqg.jpg' onclick="btf.scrollToDest(0,500)" title="返回顶部")
+//- //-   a.deal_link(href="https://www.luogu.com.cn/user/751017" title="luogu" target="_blank")
+//- //-     i.fas.fa-file-code
+//- //-   a.deal_link(href="/sitemap.xml" title="sitemap" target="_blank")
+//- //-     i.fas.fa-sitemap
+//- //-   a.deal_link(href="/atom.xml" title="Telegram" target="_blank")
+//- //-     i.fas.fa-rss
+//- //- #lin-footer
+//- //-   .footer-group
+//- //-     h3.footer-title 直达
+//- //-     .footer-links
+//- //-       a.footer-item(href="https://me.hellolin.cf/" target="_blank") 我的主页
+//- //-       //- a.footer-item(href="/music") 音乐欣赏
+//- //-       //- a.footer-item(href="/harbour") 心灵港湾
+//- //-       a.footer-item(href="javascript:" onclick="toRandomPost()") 随机文章
+//- //-   .footer-group
+//- //-     h3.footer-title 分类
+//- //-     .footer-links
+//- //-       a.footer-item(href="/categories/学习笔记/") 学习笔记
+//- //-       //- a.footer-item(href="/categories/🦋魔改教程/") 魔改教程
+//- //-       //- a.footer-item(href="/categories/🌈算法笔记/") 算法笔记
+//- //-       a.footer-item(href="/categories/其他内容/") 其他内容
+//- //-   .footer-group
+//- //-     h3.footer-title 关于
+//- //-     .footer-links
+//- //-       a.footer-item(href="https://me.hellolin.cf/") 关于我
+//- //-       a.footer-item(href="/status/") 博客状态
+//- //-       a.footer-item(href="/archives/") 文章归档
+//- //-       a.footer-item(href="/log/") 更新记录
+//- //-   .footer-group
+//- //-     h3.footer-title 友链
+//- //-     .footer-links#friend-links-in-footer
+//- //-   //- .footer-group
+//- //-   //-   h3.footer-title 协议
+//- //-   //-   .footer-links
+//- //-   //-     a.footer-item(href="/privacy/") 隐私协议
+//- //-   //-     a.footer-item(href="/cookies/") Cookie
+//- //-   //-     a.footer-item(href="/cc/") 版权协议
+//- //- #footer-banner
+//- //-   .footer-banner-links
+//- //-     .footer-banner-left
+//- //-       .footer-banner-left
+//- //-         #footer-banner-tips
+//- //-         script(src='https://fastly.jsdelivr.net/npm/typed.js/lib/typed.min.js')
+//- //-         script.
+//- //-           var typed = new Typed("#footer-banner-tips", {
+//- //-             strings: ["Say Hello to the Whole World.", "向整个世界问好。"],
+//- //-             startDelay: 200,
+//- //-             backDelay: 2000,
+//- //-             typeSpeed: 100,
+//- //-             loop: true,
+//- //-             backSpeed: 20
+//- //-           })
+
+//- //-     .footer-banner-right
+//- //-       a.footer-banner-link(href="https://hexo.io/zh-cn/" title="Hexo") 框架
+//- //-       a.footer-banner-link |
+//- //-       a.footer-banner-link(href="https://github.com/jerryc127/hexo-theme-butterfly" title="theme") 主题
+//- //-       a.footer-banner-link |
+//- //-       //- a.footer-banner-link(href="/atom.xml" title="RSS") 订阅
+//- //-       //- a.footer-banner-link |
+//- //-       //- a.footer-banner-link(href="" title="about") 关于
+//- //-       //- a.footer-banner-link |
+//- //-       //- a.footer-banner-link.cc(href="/cc/" title="cc协议")
+//- //-       //-   i.iconfont.icon-cc
+//- //-       //-   span 协议
+
 //- #footer_deal
-//-   a.deal_link(href="mailto:hellolinoi@outlook.com" title="mail")
-//-     i.iconfont.icon-mail
-//-   a.deal_link(href="http://wpa.qq.com/msgrd?v=3&uin=1721364864&site=qq&menu=yes" title="qq" target="_blank")
-//-     i.iconfont.icon-qq1
-//-   a.deal_link(href="https://github.com/hellolllllin" title="github"  target="_blank")
-//-     i.iconfont.icon-github1
-//-   img.footer_mini_logo.entered.loading(style="border-radius:50%" src='https://img1.imgtp.com/2022/12/22/L9oWFbqg.jpg' onclick="btf.scrollToDest(0,500)" title="返回顶部")
-//-   a.deal_link(href="https://www.luogu.com.cn/user/751017" title="luogu" target="_blank")
-//-     i.fas.fa-file-code
-//-   a.deal_link(href="/sitemap.xml" title="sitemap" target="_blank")
-//-     i.fas.fa-sitemap
-//-   a.deal_link(href="/atom.xml" title="Telegram" target="_blank")
-//-     i.fas.fa-rss
-//- #Jay-footer
+//-   a.deal_link(href="mailto:hellolinoi@outlook.com" title="邮件")
+//-     i.fas.fa-envelope
+//-   a.deal_link(href="https://wpa.qq.com/msgrd?v=3&uin=1721364864&site=qq&menu=yes" title="QQ" target="_blank")
+//-     i.fab.fa-qq
+//-   a.deal_link(href="https://github.com/hellolllllin" title="GitHub"  target="_blank")
+//-     i.fab.fa-github
+//-   img.footer_mini_logo.entered.loading(style="border-radius:50%" src='/favicons/favicon-32x32.png' onclick="btf.scrollToDest(0,500)" title="回到顶部")
+//-   a.deal_link(href="https://gitlab.com/lliinn" title="GitLab" target="_blank")
+//-     i.fab.fa-gitlab
+//-   a.deal_link(href="https://codepen.io/hellolllllin" title="CodePen" target="_blank")
+//-     i.fab.fa-codepen
+//-   a.deal_link(href="https://www.zhihu.com/people/hellolin.cf" title="知乎" target="_blank")
+//-     i.fab.fa-zhihu
+//- #lin-footer
+//-   .footer-group
+//-     h3.footer-title 站点
+//-     .footer-links
+//-       a.footer-item(href="https://me.hellolin.cf" target="_blank") 个人主页
+//-       a.footer-item(href="https://www.hellolin.cf") 博客主线
+//-       a.footer-item(href="https://sub1.hellolin.cf") 博客副线
+//-       a.footer-item(href="https://sub2.hellolin.cf") 博客备线
 //-   .footer-group
 //-     h3.footer-title 直达
 //-     .footer-links
-//-       a.footer-item(href="https://me.hellolin.cf/" target="_blank") 我的主页
-//-       //- a.footer-item(href="/music") 音乐欣赏
-//-       //- a.footer-item(href="/harbour") 心灵港湾
-//-       a.footer-item(href="javascript:" onclick="toRandomPost()") 随机文章
-//-   .footer-group
-//-     h3.footer-title 分类
-//-     .footer-links
-//-       a.footer-item(href="/categories/学习笔记/") 学习笔记
-//-       //- a.footer-item(href="/categories/🦋魔改教程/") 魔改教程
-//-       //- a.footer-item(href="/categories/🌈算法笔记/") 算法笔记
-//-       a.footer-item(href="/categories/其他内容/") 其他内容
-//-   .footer-group
-//-     h3.footer-title 关于
-//-     .footer-links
-//-       a.footer-item(href="https://me.hellolin.cf/") 关于我
-//-       a.footer-item(href="/status/") 博客状态
-//-       a.footer-item(href="/archives/") 文章归档
-//-       a.footer-item(href="/log/") 更新记录
-//-   .footer-group
-//-     h3.footer-title 友链
-//-     .footer-links#friend-links-in-footer
+//-       a.footer-item(href="/archive/") 文章归档
+//-       a.footer-item(href="javascript:toRandomPost();") 随机文章
+//-       a.footer-item(href="/categories/") 文章分类
+//-       a.footer-item(href="/tags/") 文章标签
 //-   //- .footer-group
-//-   //-   h3.footer-title 协议
+//-   //-   h3.footer-title 关于
 //-   //-   .footer-links
-//-   //-     a.footer-item(href="/privacy/") 隐私协议
-//-   //-     a.footer-item(href="/cookies/") Cookie
-//-   //-     a.footer-item(href="/cc/") 版权协议
+//-   //-     a.footer-item(href="/about/") 关于我
+//-   //-     a.footer-item(href="/charts/") 博客统计
+//-   //-     a.footer-item(href="/archives") 文章归档
+//-   //-     a.footer-item(href="/update") 更新记录
+//-   //- .footer-group
+//-   //-   h3.footer-title 友链
+//-   //-   .footer-links#friend-links-in-footer
+//-   .footer-group
+//-     h3.footer-title 其他
+//-     .footer-links
+//-       a.footer-item(href="/logs/") 更新日志
+//-       a.footer-item(href="https://news.hellolin.cf/") 每日早报
+//-       a.footer-item(href="/license/") 博客协议
+//-       a.footer-item(href="/link/") 友情链接
+      
 //- #footer-banner
 //-   .footer-banner-links
 //-     .footer-banner-left
-//-       .footer-banner-left
-//-         #footer-banner-tips
-//-         script(src='https://fastly.jsdelivr.net/npm/typed.js/lib/typed.min.js')
-//-         script.
-//-           var typed = new Typed("#footer-banner-tips", {
-//-             strings: ["Say Hello to the Whole World.", "向整个世界问好。"],
-//-             startDelay: 200,
-//-             backDelay: 2000,
-//-             typeSpeed: 100,
-//-             loop: true,
-//-             backSpeed: 20
-//-           })
-
+//-       //- .footer-banner-left
+//-       #footer-banner-tips
+//-       script(src='https://npm.elemecdn.com/typed.js/lib/typed.min.js')
 //-     .footer-banner-right
 //-       a.footer-banner-link(href="https://hexo.io/zh-cn/" title="Hexo") 框架
 //-       a.footer-banner-link |
-//-       a.footer-banner-link(href="https://github.com/jerryc127/hexo-theme-butterfly" title="theme") 主题
+//-       a.footer-banner-link(href="https://butterfly.js.org/" title="theme") 主题
 //-       a.footer-banner-link |
-//-       //- a.footer-banner-link(href="/atom.xml" title="RSS") 订阅
-//-       //- a.footer-banner-link |
-//-       //- a.footer-banner-link(href="" title="about") 关于
-//-       //- a.footer-banner-link |
-//-       //- a.footer-banner-link.cc(href="/cc/" title="cc协议")
-//-       //-   i.iconfont.icon-cc
-//-       //-   span 协议
+//-       a.footer-banner-link(href="/atom.xml" title="RSS") 订阅
+//-       a.footer-banner-link |
+//-       a.footer-banner-link(href="/sitemap.xml" title="Sitemap") 地图
+//-       a.footer-banner-link |
+//-       a.footer-banner-link.cc(href="/license/" title="License") 协议

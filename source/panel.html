@@ -158,15 +158,19 @@
         </div>
 
     </div>
-    <div id="bg" style="margin:40px;">
-        2
+    <div id="bg" style="margin:40px;" class="mdui-typo">
+        <h2>背景图设置</h2>
     </div>
-    <div id="ab" style="margin:40px;">
-        3
+    <div id="ab" style="margin:40px;" class="mdui-typo">
+        <h2>关于站点</h2>
+        <p>Hexo <code id="hexo-ver">6.3.0</code> + Butterfly <code id="theme-ver">4.5.1</code></p>
+        <h2>关于面板</h2>
+        <p>Hellolin Site Control Panel (HSCP) <code id="hexo-ver">0.0.1</code></p>
+        <p><i class="mdui-icon material-icons">copyright</i> 2022 Hellolin.</p>
     </div>
     <script src="https://npm.elemecdn.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
     <script>
-        var blurv
+        var blurv, autov, themev, bgv
         // 高斯模糊
         function doBlur()
         {
@@ -182,7 +186,11 @@
         function initBlur()
         {
             blurv=window.parent.localStorage.getItem('lin-blur')
-            if(blurv==null) window.parent.localStorage.setItem('lin-blur', 'no')
+            if(blurv==null)
+            {
+                blurv='no'
+                window.parent.localStorage.setItem('lin-blur', 'no')
+            }
             if(blurv=='yes') document.getElementById('blurs').setAttribute('checked', '')
             doBlur()
         }
@@ -202,9 +210,59 @@
         {
             window.parent.localStorage.setItem('lin-autoChange', e)
         }
+        // 主题色
+        function doTheme()
+        {
+            window.parent.document.getElementById('mainColor').innerText=`
+            :root
+            {
+                --lin-main: var(--lin-${themev});
+                --lin-main-op: var(--lin-${themev}-op);
+            }
+            `
+        }
+        function initTheme()
+        {
+            themev=window.parent.localStorage.getItem('lin-theme')
+            if(themev==null)
+            {
+                themev='teal'
+                window.parent.localStorage.setItem('lin-theme', 'teal')
+            }
+            doTheme()
+        }
+        function setTheme(e)
+        {
+            themev=e
+            window.parent.localStorage.setItem('lin-theme', e)
+        }
+        // 背景
+        function initBg()
+        {
+            bgv=window.parent.localStorage.getItem('lin-bg')
+            if(bgv==null)
+            {
+                bgv="url(https://s2.loli.net/2022/12/29/tlBhEnPH8MOAfST.jpg)"
+                window.parent.localStorage.setItem('lin-bg', bgv)
+            }
+            window.parent.getElementById('web_bg').style.innerText=`background: ${bgv} !important;`
+        }
+        function setBg(e)
+        {
+            bgv=e
+            window.parent.localStorage.setItem('lin-bg', bgv)
+            window.parent.getElementById('web_bg').style.innerText=`background: ${e} !important;`
+        }
+
         // 主函数
-        initBlur()
-        initAuto()
+        function main()
+        {
+            initBlur()
+            initAuto()
+            initTheme()
+            initBg()
+        }
+        main()
     </script>
 </body>
 </html>

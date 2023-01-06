@@ -11,6 +11,7 @@
 --lin-black-op: rgba(0, 0, 0, 0.2);
 --lin-none: rgba(0, 0, 0, 0);
 --lin-gray: #999999;
+--lin-toc-not-active: #99999975;
 /* --lin-yellow: #ffc93e; */
 --lin-border-radius: 9px;
 --lin-main: var(--lin-theme);
@@ -233,6 +234,8 @@ border: var(--lin-style-border-hover) !important;
 box-shadow: var(--lin-shadow-main) !important;
 }
 
+.snackbar-container > p { color: var(--lin-reverse) !important }
+
 #recent-posts > .recent-post-item:hover
 {
     transform: scale(1.005) !important;
@@ -269,8 +272,15 @@ background: var(--lin-black-acrylic2) !important;
 background: transparent !important;
 }
 
-#rightside > div > button {
-border-radius: 6px;
+/* 工具按钮 */
+
+
+#rightside > div > button,
+#rightside > div > a
+{
+    border-radius: 8px !important;
+    border: var(--lin-style-border-hover) !important;
+    box-shadow: var(--lin-shadow-main) !important
 }
 
 /* 导航栏亚克力 */
@@ -311,11 +321,6 @@ border-radius: 6px;
 
 /* toc */
 
-.toc-item > .active
-{
-    border-radius: var(--lin-border-radius) !important
-}
-
 .toc-item
 {
     line-height: 1.9 !important
@@ -333,14 +338,18 @@ border-radius: 6px;
 
 .toc-link:not(.active)
 {
-    color: var(--lin-gray-op) !important;
+    color: var(--lin-toc-not-active) !important;
 }
 .toc-number
 {
     display: none !important
 }
 
-
+.toc-item > .active
+{
+    border-radius: var(--lin-border-radius) !important;
+    color: var(--lin-blank) !important
+}
 
 /* 滚动条 */
 
@@ -531,6 +540,12 @@ display: none;
   left:50%;
   translate:-50%;
 }
+.menus_item_child
+{
+    border-radius: 8px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important
+} 
 #site-name::before{
     opacity: 0;
     background-color: var(--lin-theme)!important;
@@ -1375,10 +1390,15 @@ span.top-group-text
 /* 外挂标签 */
 emp,
 wavy,
-u
+u,
+.site-card > .info > .desc
 {
     color: var(--lin-fontcolor) !important
 }
+
+
+
+/* 页脚 */
 
 
 /* Hellolin Site Control Panel */

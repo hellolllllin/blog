@@ -12,6 +12,14 @@ aside: false
 
 {% timeline 更新日志,green %}
 
+<!-- timeline 2023.01.06 Fri. -->
+
+1. 更新了浅色模式下部分有问题的样式。
+2. 优化了浏览体验。
+3. `GitHub Calendar` 在某些情况下无法正常显示，正在尝试修复此问题。
+
+<!-- endtimeline -->
+
 <!-- timeline 2023.01.04 Wed. -->
 
 1. 更新了代码高亮主题，`Tokyo Night Dark`。

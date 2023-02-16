@@ -28,9 +28,9 @@ top_group_index: 5
 
 [题面(AtCoder)](https://atcoder.jp/contests/arc124/tasks/arc124_b)
 
-[在我的博客上同步推送](https://hellolin.cf/articles/at_arc124_b_sol.md)
+<!-- [在我的博客上同步推送](https://hellolin.cf/articles/at_arc124_b_sol.md) -->
 
-AtCoder Problems 评级难度：$\texttt{\color{#ffb972}{788}}$。
+<!-- AtCoder Problems 评级难度：$\texttt{\color{#ffb972}{788}}$。 -->
 
 ## 题意
 
